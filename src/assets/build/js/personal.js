@@ -15,20 +15,26 @@ $(document).ready(function () {
     if ($li.is('.active')) {
       $li.removeClass('active active-sm');
 
-      //$li.find('ul').css("display","none");
       $('ul:first', $li).slideUp(function() {
-          console.log('asd');
       });
 
       console.log($li.find('ul'));
       console.log('remover');
     }else {
+      if (!$li.parent().is('.child_menu')) {
+        $("#sidebar-menu").find('li').removeClass('active active-sm');
+        $("#sidebar-menu").find('li ul').slideUp();
+      }else {
+        if ($("body").is( ".nav-sm" )) {
+          $li.parent().find( "li" ).removeClass( "active active-sm" );
+					$li.parent().find( "li ul" ).slideUp();
+        }
+      }
+
       $li.addClass('active');
 
       $('ul:first', $li).slideDown(function() {
-          console.log('asd');
       });
-      //$li.find('ul').css("display","block");
       console.log($li);
       console.log('agregar');
     }
