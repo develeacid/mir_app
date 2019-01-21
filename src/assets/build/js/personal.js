@@ -9,7 +9,7 @@ $(document).ready(function () {
   });
 });
 
-(function () {
+$(document).ready(function () {
   $("#sidebar-menu").find('a').on('click' , function () {
     var $li = $(this).parent();
     if ($li.is('.active')) {
@@ -39,4 +39,4 @@ $(document).ready(function () {
       console.log('agregar');
     }
   });
-})();
+});
