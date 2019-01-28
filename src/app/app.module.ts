@@ -6,6 +6,7 @@ import { MenuComponent } from './shared/menu/menu.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
+import { TindicadorComponent } from './pages/tindicador/tindicador.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { PrincipalComponent } from './pages/principal/principal.component';
     MenuComponent,
     HeaderComponent,
     FooterComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    TindicadorComponent
   ],
   imports: [
     BrowserModule
