@@ -45,12 +45,26 @@
           </div>
           <div class="col-md-6">
             <!-- Espacio para el div del calendario -->
+            <button (click)="randomize()">CLICK</button>
           </div>
         </div>
 
         <div class="col-md-9 col-sm-9 col-xs-12">
-          <div id="chart_plot_01" class="demo-placeholder">
-            <p>espacio para la grafica</p>
+          <div class="row">
+            <div class="col-md-12">
+              <div style="display: block;">
+              <canvas baseChart 
+                          [datasets]="lineChartData"
+                          [labels]="lineChartLabels"
+                          [options]="lineChartOptions"
+                          [colors]="lineChartColors"
+                          [legend]="lineChartLegend"
+                          [chartType]="lineChartType"
+                          (chartHover)="chartHovered($event)"
+                          (chartClick)="chartClicked($event)"></canvas>
+              </div>
+            </div>
+
           </div>
         </div>
         <div class="col-md-3 col-sm-3 col-xs-12 bg-white">

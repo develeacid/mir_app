@@ -7,7 +7,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { TindicadorComponent } from './pages/tindicador/tindicador.component';
+//RUTAS
 import { AppRoutingModule } from './shared/app.routing.module';
+//GRAFICAS
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { AppRoutingModule } from './shared/app.routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
