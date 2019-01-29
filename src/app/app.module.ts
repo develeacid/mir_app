@@ -7,6 +7,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { PrincipalComponent } from './pages/principal/principal.component';
 import { TindicadorComponent } from './pages/tindicador/tindicador.component';
+import { AppRoutingModule } from './shared/app.routing.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TindicadorComponent } from './pages/tindicador/tindicador.component';
     TindicadorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
