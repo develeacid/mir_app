@@ -30,7 +30,7 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "src/assets/build/js/personal.js",
-              "node_modules/chart.js/src/chart.js"
+              "node_modules/chart.js/dist/Chart.bundle.js"
             ]
           },
           "configurations": {
