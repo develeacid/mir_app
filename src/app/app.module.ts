@@ -11,6 +11,9 @@ import { TindicadorComponent } from './pages/tindicador/tindicador.component';
 import { AppRoutingModule } from './shared/app.routing.module';
 //GRAFICAS
 import { ChartsModule } from 'ng2-charts';
+//SERVICIOS
+import { ImprimirService } from './services/imprimir.service';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { ChartsModule } from 'ng2-charts';
     AppRoutingModule,
     ChartsModule
   ],
-  providers: [],
+  providers: [
+    ImprimirService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
