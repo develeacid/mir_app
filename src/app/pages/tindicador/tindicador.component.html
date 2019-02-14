@@ -119,6 +119,41 @@
 
 
       <div class="clearfix"></div>
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          {{this.imprimir}}
+          <br>
+          {{this.imprimir[0]}}
+          <br>
+          {{this.imprimir[0][0]}}
+          <br>
+          {{this.imprimir[0][0].nombre}}
+          <br>
+        </div>
+        <div class="clearfix"></div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <ul *ngFor="let imp of imprimir; let i = index">
+              <li>Nombre: {{this.imprimir[i][0].nombre}}</li>
+              <li>
+                Estrategias: {{this.imprimir[i][0].estrategia}}
+                <ul *ngFor="let subimp of imprimir[i][0].estrategia; let j = index">
+                  <li>Nombre: {{this.imprimir[i][0].estrategia[j].nombre}}</li>
+                  <li>
+                    Lineas de Acción: {{this.imprimir[i][0].estrategia[j].lineasAccion}}
+                    <ul *ngFor="let subsubimp of this.imprimir[i][0].estrategia[j].lineasAccion; let k = index">
+                      <li>{{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+      <div class="clearfix"></div>
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <pre>
+          {{imprimir | json}}
+        </pre>
+      </div>
 
     </div>
   </div>

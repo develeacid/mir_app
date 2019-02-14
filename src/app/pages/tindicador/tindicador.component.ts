@@ -20,6 +20,11 @@ export class TindicadorComponent implements OnInit {
     this.imprimir = this._imprimirService.getImprimir();
 
     console.log(this.imprimir);
+    console.log(this.imprimir[0]);
+    console.log(this.imprimir[0][0]);
+    console.log(this.imprimir[0][0].nombre);
+    console.log(this.imprimir[0][0].estrategia);
+    console.log(this.imprimir[0][0].estrategia[0]);
   }
 
 }
