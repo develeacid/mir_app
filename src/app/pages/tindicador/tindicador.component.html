@@ -15,6 +15,18 @@
   .fraction span.bar {display: none;}
 </style>
 <!-- CSS para la formula de calculo -->
+<style media="screen">
+  .desplegable .accordion-heading {  position: relative; }
+  .desplegable .accordion-heading .edit {
+      position: absolute;
+      top: 8px;
+      right: 30px;
+  }
+  .desplegable .area { border-left: 4px solid #f38787; }
+  .desplegable .equipamento { border-left: 4px solid #65c465; }
+  .desplegable .ponto { border-left: 4px solid #98b3fa; }
+  .desplegable .collapse.in { overflow: visible; }
+</style>
 <div class="right_col" role="main">
   <div class="">
     <div class="page-title">
@@ -120,39 +132,250 @@
 
       <div class="clearfix"></div>
         <div class="col-md-12 col-sm-12 col-xs-12">
-          {{this.imprimir}}
-          <br>
-          {{this.imprimir[0]}}
-          <br>
-          {{this.imprimir[0][0]}}
-          <br>
-          {{this.imprimir[0][0].nombre}}
-          <br>
+          <div class="x_panel">
+            {{this.imprimir}}
+            <br>
+            {{this.imprimir[0]}}
+            <br>
+            {{this.imprimir[0][0]}}
+            <br>
+            {{this.imprimir[0][0].nombre}}
+            <br>
+          </div>
         </div>
         <div class="clearfix"></div>
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <ul *ngFor="let imp of imprimir; let i = index">
-              <li>Nombre: {{this.imprimir[i][0].nombre}}</li>
-              <li>
-                Estrategias: {{this.imprimir[i][0].estrategia}}
-                <ul *ngFor="let subimp of imprimir[i][0].estrategia; let j = index">
-                  <li>Nombre: {{this.imprimir[i][0].estrategia[j].nombre}}</li>
-                  <li>
-                    Lineas de Acción: {{this.imprimir[i][0].estrategia[j].lineasAccion}}
-                    <ul *ngFor="let subsubimp of this.imprimir[i][0].estrategia[j].lineasAccion; let k = index">
-                      <li>{{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
+            <div class="x_panel">
+              <ul *ngFor="let imp of imprimir; let i = index">
+                <li>Nombre: {{this.imprimir[i][0].nombre}}</li>
+                <li>
+                  Estrategias: {{this.imprimir[i][0].estrategia}}
+                  <ul *ngFor="let subimp of imprimir[i][0].estrategia; let j = index">
+                    <li>Nombre: {{this.imprimir[i][0].estrategia[j].nombre}}</li>
+                    <li>
+                      Lineas de Acción: {{this.imprimir[i][0].estrategia[j].lineasAccion}}
+                      <ul *ngFor="let subsubimp of this.imprimir[i][0].estrategia[j].lineasAccion; let k = index">
+                        <li>{{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
       <div class="clearfix"></div>
+      <!-- ACORDEON POR NIEVELES -->
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="panel-group" id="lista_nivel_1" role="tablist" aria-multiselectable="true">
+            <div *ngFor="let imp of imprimir; let i = index" class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title"><!-- EXPANDIR= aria_expanded -->
+                  <a role="button" data-toggle="collapse" data-parent="#lista_nivel_1" href="#panel{{this.imprimir[i][0].clave}}" aria-expanded="false" aria-controls="">
+                    Nombre: {{this.imprimir[i][0].nombre}}
+                  </a>
+                </h4>
+              </div>
+              <div id="panel{{this.imprimir[i][0].clave}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <!-- SUB-NIVELES 1 -->
+                  <div class="panel-group" id="lista_nivel_2_{{i}}" role="tablist" aria-multiselectable="true">
+                    <div *ngFor="let subimp of imprimir[i][0].estrategia; let j = index" class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="sub-heading">
+                        <h4 class="panel-title"><!-- EXPANDIR= aria_expanded [attr.data-parent]="'#accordion-' + day.date" -->
+                          <a role="button" data-toggle="collapse" [attr.data-parent]="'#lista_nivel_2_'+ i" href="#sub-panel-{{this.imprimir[i][0].estrategia[j].clave}}" aria-expanded="false" aria-controls="">
+                            Estrategia: {{this.imprimir[i][0].estrategia[j].nombre}}
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub-panel-{{this.imprimir[i][0].estrategia[j].clave}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sub-heading">
+                        <div class="panel-body">
+                          <!-- SUB-NIVELES 2 -->
+                          <div class="panel-group" id="lista_nivel_3_{{j}}" role="tablist" aria-multiselectable="true">
+                            <div *ngFor="let subsubimp of this.imprimir[i][0].estrategia[j].lineasAccion; let k = index" class="panel panel-default">
+                              <div class="panel-heading" role="tab" id="sub-heading">
+                                <h4 class="panel-title"><!-- EXPANDIR= aria_expanded [attr.data-parent]="'#accordion-' + day.date" -->
+                                  <a role="button" data-toggle="collapse" [attr.data-parent]="'#lista_nivel_3_'+ j" href="#sub-panel-{{this.imprimir[i][0].estrategia[j].lineasAccion[k].clave}}" aria-expanded="false" aria-controls="">
+                                    Lineas de Acción: {{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="sub-panel-{{this.imprimir[i][0].estrategia[j].lineasAccion[k].clave}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sub-heading">
+                                <div class="panel-body">
+                                  informacion
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- SUB-NIVELES 2 -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- SUB-NIVELES 1 -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ACORDEON POR NIEVELES -->
+      <div class="clearfix"></div>
+
+      <div class="clearfix"></div>
+      <!-- ACORDEON POR NIEVELES -->
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <h1>ejemplo</h1>
+          <div class="panel-group" id="lista_desplegable"><!-- contenedor del grupo de acordiones -->
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                  <a role="button" data-toggle="collapse" data-parent="#lista_desplegable" href="#lista_uno" aria-expanded="true" aria-controls="collapseOne">
+                    Colapsar 1
+                  </a>
+                </h4>
+              </div>
+              <div id="lista_uno" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <!-- elemento a colapsar-->
+                  <div class="panel-group" id="sublista_desplegable"><!-- contenedor del grupo de acordiones -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable" href="#sub_lista_uno" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_uno" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable" href="#sub_lista_dos" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_dos" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable" href="#sub_lista_tres" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_tres" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                  <a role="button" data-toggle="collapse" data-parent="#lista_desplegable" href="#lista_dos" aria-expanded="true" aria-controls="collapseOne">
+                    Colapsar 2
+                  </a>
+                </h4>
+              </div>
+              <div id="lista_dos" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <!-- elemento a colapsar-->
+                  <div class="panel-group" id="sublista_desplegable_dos"><!-- contenedor del grupo de acordiones -->
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable_dos" href="#sub_lista_cuatro" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_cuatro" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable_dos" href="#sub_lista_cinco" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_cinco" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                        <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                          <a role="button" data-toggle="collapse" data-parent="#sublista_desplegable_dos" href="#sub_lista_seis" aria-expanded="true" aria-controls="collapseOne">
+                            Colapsar
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="sub_lista_seis" class="panel-collapse collapse" role="tabpanel">
+                        <div class="panel-body">
+                          <!-- elemento a colapsar-->
+                          Elemento a colapsar
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne"><!-- div del encabezado -->
+                <h4 class="panel-title"><!-- etiqueta del encabezado -->
+                  <a role="button" data-toggle="collapse" data-parent="#lista_desplegable" href="#lista_tres" aria-expanded="true" aria-controls="collapseOne">
+                    Colapsar 3
+                  </a>
+                </h4>
+              </div>
+              <div id="lista_tres" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                  <!-- elemento a colapsar-->
+                  Elemento a colapsar
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ACORDEON POR NIEVELES -->
 
       <div class="col-md-12 col-sm-12 col-xs-12">
-        <pre>
-          {{imprimir | json}}
-        </pre>
+        <div class="x_panel">
+          <pre>
+            {{imprimir | json}}
+          </pre>
+        </div>
       </div>
 
     </div>
