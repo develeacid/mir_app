@@ -172,7 +172,7 @@
               <div class="panel-heading" role="tab" id="headingOne">
                 <h4 class="panel-title"><!-- EXPANDIR= aria_expanded -->
                   <a role="button" data-toggle="collapse" data-parent="#lista_nivel_1" href="#panel{{this.imprimir[i][0].clave}}" aria-expanded="false" aria-controls="">
-                    Nombre: {{this.imprimir[i][0].nombre}}
+                    Nombre lista_nivel_1 : {{this.imprimir[i][0].nombre}}
                   </a>
                 </h4>
               </div>
@@ -184,25 +184,25 @@
                       <div class="panel-heading" role="tab" id="sub-heading">
                         <h4 class="panel-title"><!-- EXPANDIR= aria_expanded [attr.data-parent]="'#accordion-' + day.date" -->
                           <a role="button" data-toggle="collapse" [attr.data-parent]="'#lista_nivel_2_'+ i" href="#sub-panel-{{this.imprimir[i][0].estrategia[j].clave}}" aria-expanded="false" aria-controls="">
-                            Estrategia: {{this.imprimir[i][0].estrategia[j].nombre}}
+                            Estrategia lista_nivel_2_{{i}}: {{this.imprimir[i][0].estrategia[j].nombre}}
                           </a>
                         </h4>
                       </div>
                       <div id="sub-panel-{{this.imprimir[i][0].estrategia[j].clave}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sub-heading">
                         <div class="panel-body">
                           <!-- SUB-NIVELES 2 -->
-                          <div class="panel-group" id="lista_nivel_3_{{j}}" role="tablist" aria-multiselectable="true">
+                          <div class="panel-group" id="lista_nivel_{{i}}_{{j}}" role="tablist" aria-multiselectable="true">
                             <div *ngFor="let subsubimp of this.imprimir[i][0].estrategia[j].lineasAccion; let k = index" class="panel panel-default">
                               <div class="panel-heading" role="tab" id="sub-heading">
                                 <h4 class="panel-title"><!-- EXPANDIR= aria_expanded [attr.data-parent]="'#accordion-' + day.date" -->
-                                  <a role="button" data-toggle="collapse" [attr.data-parent]="'#lista_nivel_3_'+ j" href="#sub-panel-{{this.imprimir[i][0].estrategia[j].lineasAccion[k].clave}}" aria-expanded="false" aria-controls="">
-                                    Lineas de Acción: {{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}
+                                  <a role="button" data-toggle="collapse" [attr.data-parent]="'#lista_nivel_'+i+'_'+ j" href="#sub-panel-{{this.imprimir[i][0].estrategia[j].lineasAccion[k].clave}}" aria-expanded="false" aria-controls="">
+                                    Lineas de Acción lista_nivel_3_{{j}} : {{this.imprimir[i][0].estrategia[j].lineasAccion[k].nombre}}
                                   </a>
                                 </h4>
                               </div>
                               <div id="sub-panel-{{this.imprimir[i][0].estrategia[j].lineasAccion[k].clave}}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="sub-heading">
                                 <div class="panel-body">
-                                  informacion
+                                  informacion {{j}}
                                 </div>
                               </div>
                             </div>
