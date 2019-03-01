@@ -1,0 +1,77 @@
+{
+  "num_program": 106,
+  "programa": "FORTALECIMIENTO A LA COMPETENCIA LABORAL Y EMPLEO DE CALIDAD",
+  "nivel": {
+    "fin": [
+      {
+        "resumen": "Contribuir al impulso del desarrollo económico del estado mediante el incremento de la productividad, competitividad, regulación y generación de empleos formales.",
+        "indicador": "Tasa de variación por el producto Interno Bruto Estatal",
+        "verificacion": "Sistema de Cuentas Nacionales de México, INEGI disponible en http://www.inegi.org.mx/sistemas/bie/",
+        "supuestos": "La población económicamente activa cuenta con un empleo formal y de calidad."
+      }
+    ],
+    "proposito": [
+      {
+        "resumen": "La población económicamente activa obtiene un empleo formal",
+        "indicador": "Tasa de informalidad laboral 1. Porcentaje de la población económicamente activa atendida incorporada al sector formal de la economía.",
+        "verificacion": "Encuesta Nacional de Ocupación y Empleo/INEGI Sistema de monitoreo de los programas disponible en https:\\\\www.economia.oaxaca.gob.mx\\monitoreo",
+        "supuestos": "Se crean nuevas fuentes de empleo en la entidad oaxaqueña."
+      }
+    ],
+    "componente": [
+      {
+        "id": "c1",
+        "resumen": "Capacitaciones para y en el trabajo impartidas",
+        "indicador": "Porcentaje de personas capacitadas",
+        "verificacion": "Base datos del control estadístico del Departamento de de Información y Estadística del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
+        "supuestos": "La población mayor de 15 años se interesa por capacitarse",
+        "actividades": [
+          {
+            "id": "c1a1",
+            "resumen": "resumen act 1",
+            "indicador": "indicador act 1",
+            "verificacion": "verificacion act 1",
+            "supuestos": "supuestos act 1"
+          },
+          {
+            "id": "c1a2",
+            "resumen": "resumen act 2",
+            "indicador": "indicador act 2",
+            "verificacion": "verificacion act 2",
+            "supuestos": "supuestos act 2"
+          }
+        ]
+      },
+      {
+        "id": "c2",
+        "resumen": "Capacitaciones c2",
+        "indicador": "Porcentaje c2",
+        "verificacion": "Base datos c2",
+        "supuestos": "La población mayor c2",
+        "actividades": [
+          {
+            "id": "c2a1",
+            "resumen": "resumen act 1",
+            "indicador": "indicador act 1",
+            "verificacion": "verificacion act 1",
+            "supuestos": "supuestos act 1"
+          },
+          {
+            "id": "c2a2",
+            "resumen": "resumen act 2",
+            "indicador": "indicador act 2",
+            "verificacion": "verificacion act 2",
+            "supuestos": "supuestos act 2"
+          },
+          {
+            "id": "c2a3",
+            "resumen": "resumen act 3",
+            "indicador": "indicador act 3",
+            "verificacion": "verificacion act 3",
+            "supuestos": "supuestos act 3"
+          }
+        ]
+      }
+    ]
+  }
+}
