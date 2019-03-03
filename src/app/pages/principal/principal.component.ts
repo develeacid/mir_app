@@ -66,8 +66,14 @@ export class PrincipalComponent {
     console.log(e);
   }
 
+  //Array de info basica de las mir
+  mir_info : any [] = [];
+
   constructor(private infomir : InfomirService){
-    this.infomir.getNewReleases();
+    this.infomir.getNewReleases().subscribe( (data : any) => {
+      console.log(data);
+      this.mir_info = data;
+    });
   }
 
 }
