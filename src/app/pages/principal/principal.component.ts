@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfomirService } from 'src/app/services/infomir.service';
 
 @Component({
   selector: 'app-principal',
@@ -63,6 +64,10 @@ export class PrincipalComponent {
 
   public chartHovered(e:any):void {
     console.log(e);
+  }
+
+  constructor(private infomir : InfomirService){
+    this.infomir.getNewReleases();
   }
 
 }

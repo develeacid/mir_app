@@ -13,6 +13,8 @@ import { AppRoutingModule } from './shared/app.routing.module';
 import { ChartsModule } from 'ng2-charts';
 //SERVICIOS
 import { ImprimirService } from './services/imprimir.service';
+import { InfomirService } from './services/infomir.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,10 +29,12 @@ import { ImprimirService } from './services/imprimir.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ChartsModule
+    ChartsModule,
+    HttpClientModule
   ],
   providers: [
-    ImprimirService
+    ImprimirService,
+    InfomirService
   ],
   bootstrap: [AppComponent]
 })
