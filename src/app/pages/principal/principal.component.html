@@ -232,12 +232,70 @@
   <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
 
   <!-- AREA DE PRUEBAS -->
+  <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
   <div class="col-md-12 col-sm-12 col-xs-12">
+    <!-- Nav tabs con NG FOR -->
     <ul class="nav nav-tabs" role="tablist" >
-      <li *ngFor="let item_tab_mir of mir_info"  role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">MIR 106 {{data}}</a></li>
+      <li *ngFor="let item_tab_mir of mir_info; let i = index" role="presentation" class=""><a href="#mir_{{this.mir_info[i].num_program}}" aria-controls="home" role="tab" data-toggle="tab">MIR {{this.mir_info[i].num_program}}</a></li>
     </ul>
+    <!-- Nav tabs con NG FOR -->
+      <div class="tab-content">
+        <div *ngFor="let item_tab_mir of mir_info; let i = index" role="tabpanel" class="tab-pane fade in" id="mir_{{this.mir_info[i].num_program}}">
+          MIR {{this.mir_info[i].num_program}}
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th>Nivel</th>
+                <th>Resumen Narrativo</th>
+                <th>Indicador</th>
+                <th>Medios de Verificación</th>
+                <th>Supuestos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>FIN</th>
+                <td>{{this.mir_info[i].nivel.fin[0].resumen}}</td>
+                <td>{{this.mir_info[i].nivel.fin[0].indicador}}</td>
+                <td>{{this.mir_info[i].nivel.fin[0].verificacion}}</td>
+                <td>{{this.mir_info[i].nivel.fin[0].supuestos}}</td>
+              </tr>
+              <tr>
+                <th>Proposito</th>
+                <td>{{this.mir_info[i].nivel.proposito[0].resumen}}</td>
+                <td>{{this.mir_info[i].nivel.proposito[0].indicador}}</td>
+                <td>{{this.mir_info[i].nivel.proposito[0].verificacion}}</td>
+                <td>{{this.mir_info[i].nivel.proposito[0].supuestos}}</td>
+              </tr>
+            </tbody>
+            <tbody *ngFor="let lis_component of mir_info[i].nivel.componente; let j = index" >
+              <tr style="cursor:pointer">
+                <th>
+                  <a href="#" data-toggle="collapse" href="#fila{{i}}_{{j}}" aria-expanded="false" aria-controls="fila_1" id="filas">
+                    Componente {{this.mir_info[i].nivel.componente[j].id}}<br>
+                    {{this.mir_info[i].nivel.componente[j].actividades[0].id}}
+                  </a>
+                </th>
+                <td>{{this.mir_info[i].nivel.componente[j].resumen}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].indicador}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].verificacion}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].supuestos}}</td>
+              </tr>
+              <tr *ngFor="let list_actividades of mir_info[0].nivel.componente[0].actividades; let k = index">
+                  <th>Actividad {{this.mir_info[i].nivel.componente[j].actividades[k].id}}</th>
+                <td>{{this.mir_info[i].nivel.componente[j].actividades[k].resumen}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].actividades[k].indicador}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].actividades[k].verificacion}}</td>
+                <td>{{this.mir_info[i].nivel.componente[j].actividades[k].supuestos}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
   </div>
+  <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
   <!-- AREA DE PRUEBAS -->
+
 
 </div>
 <!-- /page content -->
