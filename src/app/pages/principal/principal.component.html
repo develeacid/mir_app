@@ -120,123 +120,17 @@
 
 
 
-  <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
-  <div class="col-md-12 col-sm-12 col-xs-12">
 
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">MIR 106</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">MIR 161</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">MIR N</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade in active" id="home">
-      MIR 106
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Nivel</th>
-            <th>Resumen Narrativo</th>
-            <th>Indicador</th>
-            <th>Medios de Verificación</th>
-            <th>Supuestos</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th>FIN</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-          <tr>
-            <th>Proposito</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-          <tr style="cursor:pointer">
-            <th>
-              <a href="#" data-toggle="collapse" href="#fila1" aria-expanded="false" aria-controls="fila_1" id="filas">
-                Componente
-              </a>
-            </th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-        </tbody>
-        <tbody id="fila1" class="collapse" role="tabpanel" data-parent="filas">
-          <tr >
-              <th>Actividad 1</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-          <tr><!-- VERIFICAR FUNCIONALIDAD PARA QUE APARESCAN TODAS LAS FILAS-->
-              <th>Actividad 2</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr style="cursor:pointer">
-            <th>
-              <a href="#" data-toggle="collapse" href="#fila2" aria-expanded="false" aria-controls="fila_1" id="filas">
-                Componente
-              </a>
-            </th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-        </tbody>
-        <tbody id="fila2" class="collapse" role="tabpanel" data-parent="filas">
-          <tr >
-              <th>Actividad 1</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-          <tr><!-- VERIFICAR FUNCIONALIDAD PARA QUE APARESCAN TODAS LAS FILAS-->
-              <th>Actividad 2</th>
-            <td>Resumen Narrativo</td>
-            <td>Indicador</td>
-            <td>Medios de Verificación</td>
-            <td>Supuestos</td>
-          </tr>
-        </tbody>
-      </table>
-
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="profile">
-      MIR 161
-
-    </div>
-    <div role="tabpanel" class="tab-pane fade" id="messages">MIR N</div>
-    <div role="tabpanel" class="tab-pane fade" id="settings">...</div>
-  </div>
-
-</div>
-  <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
 
   <!-- AREA DE PRUEBAS -->
   <!-- PANEL DE INFORMACIÓN DE LAS MIR -->
   <div class="col-md-12 col-sm-12 col-xs-12">
     <!-- Nav tabs con NG FOR -->
     <ul class="nav nav-tabs" role="tablist" >
-      <li *ngFor="let item_tab_mir of mir_info; let i = index" role="presentation" class=""><a href="#mir_{{this.mir_info[i].num_program}}" aria-controls="home" role="tab" data-toggle="tab">MIR {{this.mir_info[i].num_program}}</a></li>
+      <li *ngFor="let item_tab_mir of mir_info; let i = index" role="presentation" class="">
+        <a href="#mir_{{this.mir_info[i].num_program}}" aria-controls="home" role="tab" data-toggle="tab">MIR {{this.mir_info[i].num_program}}
+        </a>
+      </li>
     </ul>
     <!-- Nav tabs con NG FOR -->
       <div class="tab-content">

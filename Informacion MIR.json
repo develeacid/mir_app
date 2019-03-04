@@ -30,47 +30,123 @@
             "actividades": [
               {
                 "id": "c1a1",
-                "resumen": "resumen act 1",
-                "indicador": "indicador act 1",
-                "verificacion": "verificacion act 1",
-                "supuestos": "supuestos act 1"
+                "resumen": "Realizar capacitaciones para y en el trabajo",
+                "indicador": "Porcentaje de cursos de capacitación realizados",
+                "verificacion": "Reportes mensuales de la unidades de capacitación que se encuentran bajo resguardo del Departamento de de Información y Estadística del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
+                "supuestos": "La población Oaxaqueña se interesa en tomar cursos de capacitación para y en el trabajo"
               },
               {
                 "id": "c1a2",
-                "resumen": "resumen act 2",
-                "indicador": "indicador act 2",
-                "verificacion": "verificacion act 2",
-                "supuestos": "supuestos act 2"
+                "resumen": "Realizar estudio de seguimiento de egresados",
+                "indicador": "Porcentaje de egresados encuestados insertados en el mercado laboral",
+                "verificacion": "Reportes de seguimiento de egresados que se encuentra bajo resguardo de la Dirección de Vinculación y Apoyo al Sector Productivo del Departamento de Información y Estadística del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
+                "supuestos": "Las personas mantienen su domicilio actual según los registros de los expedientes técnicos."
               }
             ]
           },
           {
             "id": "c2",
-            "resumen": "Capacitaciones c2",
-            "indicador": "Porcentaje c2",
-            "verificacion": "Base datos c2",
-            "supuestos": "La población mayor c2",
+            "resumen": "Certificaciones de competencias laborales realizadas.",
+            "indicador": "Porcentaje de las personas certificadas.",
+            "verificacion": "Certificados de competencia laboral que emite el Consejo Nacional de Normalización Certificación de Competencias Laborales bajo resguardo del Departamento de Competencia Laboral del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
+            "supuestos": "Las personas se interesan en certificar sus competencias laborales",
             "actividades": [
               {
                 "id": "c2a1",
-                "resumen": "resumen act 1",
-                "indicador": "indicador act 1",
-                "verificacion": "verificacion act 1",
-                "supuestos": "supuestos act 1"
+                "resumen": "Realizar cursos de alineación en competencias laborales",
+                "indicador": "Porcentaje de cursos de alineación realizados.",
+                "verificacion": "Portafolios de evidencia bajo resguardo de Departamento de Competencia Laboral del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca.",
+                "supuestos": "La población se interesa en reafirmar sus conocimientos."
               },
               {
                 "id": "c2a2",
-                "resumen": "resumen act 2",
-                "indicador": "indicador act 2",
-                "verificacion": "verificacion act 2",
-                "supuestos": "supuestos act 2"
+                "resumen": "Realizar procesos de evaluación.",
+                "indicador": "Porcentaje de procesos evaluados",
+                "verificacion": "Cedulas de evaluación bajo resguardo de Departamento de Competencia Laboral del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
+                "supuestos": "Las personas deciden realizar el pago para el proceso de evaluación"
+              }
+            ]
+          },
+          {
+            "id": "c3",
+            "resumen": "Servicios de vinculación ocupacional otorgados. ",
+            "indicador": "tasa de variación de personas colocadas en un empleo formal a través de la Coordinación del Servicio Nacional de Empleo Oaxaca",
+            "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+            "supuestos": "Las empresas demandan personal para ocupar sus vacantes",
+            "actividades": [
+              {
+                "id": "c3a1",
+                "resumen": "Concertar con empresas el registro de vacantes",
+                "indicador": "Porcentaje de empresas nuevas concertadas",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Las empresas muestran disposición de trabajar con la Coordinación del Servicio Nacional de Empleo Oaxaca"
               },
               {
-                "id": "c2a3",
-                "resumen": "resumen act 3",
-                "indicador": "indicador act 3",
-                "verificacion": "verificacion act 3",
-                "supuestos": "supuestos act 3"
+                "id": "c3a2",
+                "resumen": "Realizar Ferias de Empleo",
+                "indicador": "Porcentaje de Ferias de Empleo realizadas",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Existen un número suficiente de vacantes a ofertar"
+              }
+            ]
+          },
+          {
+            "id": "c4",
+            "resumen": "Subsidios a la población desocupada entregados.",
+            "indicador": "Porcentaje de personas desocupadas que reciben un subsidio",
+            "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+            "supuestos": "La poblacióneconómicamente activa seencuentra ocupada",
+            "actividades": [
+              {
+                "id": "c4a1",
+                "resumen": "Entregar subsidios a personas repatriadas",
+                "indicador": "Porcentaje de personas repatriadas subsidiadas",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Los migrantes oaxaqueños cuentan con residencia legal en otros países"
+              },
+              {
+                "id": "c4a2",
+                "resumen": "Entregar subsidios para la movilidad laboral a jornaleros agrícolas",
+                "indicador": "Porcentaje de jornaleros agrícolas que reciben un subsidio para la movilidad laboral.",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Los jornaleros agrícolas cuentan con los recursos suficientes para trasladarse a laborar a otras zonas."
+              },
+              {
+                "id": "c4a3",
+                "resumen": "Entregar bienes en especie para actividad de autoempleo.",
+                "indicador": "Porcentaje de personas que reciben un subsidio en especie para una actividad de autoempleo.",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Existen condiciones para emprender o fortalecer proyectos de autoempleo."
+              },
+              {
+                "id": "c4a4",
+                "resumen": "Otorgar becas a la capacitación para el trabajo",
+                "indicador": "Porcentaje de personas que concluyen una capacitación beneficiadas con una beca.",
+                "verificacion": "Registros administrativos de la Coordinación General del Servicio Nacional de Empleo consultables en https://www.gob.mx/stps/documentos/cifras-históricas-del-servicionacional-de-empleo ",
+                "supuestos": "Las empresas demandan personal capacitado para ocupar sus vacantes y existen oportunidades para el autoempleo."
+              }
+            ]
+          },
+          {
+            "id": "c5",
+            "resumen": "Centros de trabajo de competencia estatal regulados ",
+            "indicador": "Porcentaje de centros de trabajo regulados.",
+            "verificacion": "Acuerdos de cumplimiento que se encuentran en el archivo bajo resguardo de la Coordinación de Normatividad e Inspección del Trabajo.",
+            "supuestos": "Los patrones acatan la normatividad en materia laboral.",
+            "actividades": [
+              {
+                "id": "c5a1",
+                "resumen": "Inspecciones a centros de trabajo realizadas",
+                "indicador": "Porcentaje de Inspecciones realizadas.",
+                "verificacion": "Actas de inspección que se encuentra bajo resguardo del departamento de inspección laboral y previsión social de la Coordinación de Normatividad e Inspección del Trabajo.",
+                "supuestos": "Los patrones otorgan facilidades a los inspectores para realizar inspecciones."
+              },
+              {
+                "id": "c5a2",
+                "resumen": "Asesoría a trabajadores y patrones otorgada.",
+                "indicador": "Porcentaje de asesorías otorgada.",
+                "verificacion": "Actas de asesoría técnica que se encuentran bajo resguardo de la Coordinación de Normatividad e Inspección del Trabajo.",
+                "supuestos": "Los patrones otorgan facilidades a los inspectores para realizar asesorías técnicas."
               }
             ]
           }
