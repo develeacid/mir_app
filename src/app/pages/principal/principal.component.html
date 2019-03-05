@@ -175,7 +175,7 @@
                 <td>{{this.mir_info[i].nivel.componente[j].verificacion}}</td>
                 <td>{{this.mir_info[i].nivel.componente[j].supuestos}}</td>
               </tr>
-              <tr *ngFor="let list_actividades of mir_info[0].nivel.componente[0].actividades; let k = index">
+              <tr *ngFor="let list_actividades of mir_info[i].nivel.componente[j].actividades; let k = index">
                   <th>Actividad {{this.mir_info[i].nivel.componente[j].actividades[k].id}}</th>
                 <td>{{this.mir_info[i].nivel.componente[j].actividades[k].resumen}}</td>
                 <td>{{this.mir_info[i].nivel.componente[j].actividades[k].indicador}}</td>

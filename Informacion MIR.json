@@ -155,75 +155,385 @@
     },
     {
       "num_program": 161,
-      "programa": "FORTALECIMIENTO A LA COMPETENCIA LABORAL Y EMPLEO DE CALIDAD",
+      "programa": "IMPULSO A LA ECONOMÍA ",
       "nivel": {
         "fin": [
           {
-            "resumen": "Contribuir al impulso del desarrollo económico del estado mediante el incremento de la productividad, competitividad, regulación y generación de empleos formales.",
-            "indicador": "Tasa de variación por el producto Interno Bruto Estatal",
-            "verificacion": "Sistema de Cuentas Nacionales de México, INEGI disponible en http://www.inegi.org.mx/sistemas/bie/",
-            "supuestos": "La población económicamente activa cuenta con un empleo formal y de calidad."
+            "resumen": "Contribuir al desarrollo económico del estado mediante el incremento de la productividad y competitividad",
+            "indicador": "Tasa de variación por el producto Interno Bruto Estata",
+            "verificacion": "Sistema de Cuentas Nacionales de Mexico, INEGI disponible en http://www.inegi.org.mx/sistemas/bie/",
+            "supuestos": "Las condiciones económicas mejoran en el Estado."
           }
         ],
         "proposito": [
           {
-            "resumen": "La población económicamente activa obtiene un empleo formal",
-            "indicador": "Tasa de informalidad laboral 1. Porcentaje de la población económicamente activa atendida incorporada al sector formal de la economía.",
-            "verificacion": "Encuesta Nacional de Ocupación y Empleo/INEGI Sistema de monitoreo de los programas disponible en https:\\\\www.economia.oaxaca.gob.mx\\monitoreo",
-            "supuestos": "Se crean nuevas fuentes de empleo en la entidad oaxaqueña."
+            "resumen": "Las unidades económicas y emprendedores del Estado mejoran su productividad",
+            "indicador": "Tasa de variación de la producción bruta total de las unidades económicas participantes en el programa",
+            "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+            "supuestos": "Las unidades económicas hacen uso eficiente de los factores de producción"
           }
         ],
         "componente": [
           {
             "id": "c1",
-            "resumen": "Capacitaciones para y en el trabajo impartidas",
-            "indicador": "Porcentaje de personas capacitadas",
-            "verificacion": "Base datos del control estadístico del Departamento de de Información y Estadística del Instituto de Capacitación y Productividad para el Trabajo del Estado de Oaxaca",
-            "supuestos": "La población mayor de 15 años se interesa por capacitarse",
+            "resumen": "Capacidades empresariales desarrolladas",
+            "indicador": "Porcentaje de personas capacitadas Porcentaje de unidades económicas capacitadas",
+            "verificacion": "Listas de asistencia resguardadas en el expediente 'asesorados' y 'capacitados' en poder de la dirección de Emprendimiento y Fortalecimiento Empresarial del IODEMC. Expediente de capacitaciones en resguardo del Departamento de Capacitaciones y Programas Sociales del IOA. Listas de asistencia bajo el resguardo de la direccicción de Promoción Institucional del FIFEO. Padrón Único de beneficiarios de la Secretaría de Economía disponible en https://www.economia.oaxaca.gob.mx/pub",
+            "supuestos": "Las unidades económicas y emprendedores se interesan en seguirse desarrollando en forma integral ",
             "actividades": [
               {
                 "id": "c1a1",
-                "resumen": "resumen act 1",
-                "indicador": "indicador act 1",
-                "verificacion": "verificacion act 1",
-                "supuestos": "supuestos act 1"
+                "resumen": "Registrar las unidades económicas y emprendedores",
+                "indicador": "Tasa de variación de emprendedores registrados Tasa de variación de unidades económicas registradas",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo Expediente de capacitaciones en resguardo del Departamento de Capacitaciones y Programas Sociales del IOA. Listas de asistencia bajo el resguardo de la direccicción de Promoción Institucional del FIFEO",
+                "supuestos": "Las unidades económicas y emprendedores se interesan en la continuidad de su actividad"
               },
               {
                 "id": "c1a2",
-                "resumen": "resumen act 2",
-                "indicador": "indicador act 2",
-                "verificacion": "verificacion act 2",
-                "supuestos": "supuestos act 2"
+                "resumen": "Impartir capacitaciones",
+                "indicador": "Porcentaje de capacitaciones",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo Expediente de capacitaciones en resguardo del Departamento de Capacitaciones y Programas Sociales del IOA. Listas de asistencia de capacitados en resguardo del departamento de Asistencia y capacitacion y el departamento de Atención al emprendedor del IODEMC. Listas de asistencia bajo el resguardo de la direccicción de Promoción Institucional del FIFEO.",
+                "supuestos": "Los gobiernos locales y empresas cuentan con la disponibilidad de participar en las capacitación"
+              },
+              {
+                "id": "c1a3",
+                "resumen": "Otorgar asesorias a emprendores y unidades económicas.",
+                "indicador": "Porcentaje de asesorias realizadas",
+                "verificacion": "Padrón Único de beneficiarios de la Secretaría de Economía disponible en https://www.economia.oaxaca.gob.mx/pub Listas de asistencia de asesorados en resguardo del departamento de Atención al emprendedor y el departamento de Vinculación financiera del IODEMC",
+                "supuestos": "Los emprendedores y unidades económicas muestran interes"
+              },
+              {
+                "id": "c1a4",
+                "resumen": "Promocionar y difundir el contenido de los programas de capacitación",
+                "indicador": "Porcentaje de reuniones de promoción y difusión realizadas",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo Expediente de capacitaciones en resguardo del Departamento de Capacitaciones y Programas Sociales del IOA. Reportes del número de personas capacitadas bajo el resguardo de la direccicción de Promoción Institucional del FIFEO",
+                "supuestos": "Los gobiernos locales y empresas cuentan con la disponibilidad de recibir información de los programas de capacitación"
+              },
+              {
+                "id": "c1a5",
+                "resumen": "Establecer acuerdos de colaboración con entidades certificadas en el desarrollo de capacides a unidades económicas y emprendedores",
+                "indicador": "Porcentaje de acuerdos de colaboración formalizados",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo Expediente de convenios en resguardo del Departamento Jurídico del IOA. Convenios de colaboración en resguardo del departamento Jurídico del FIFEO",
+                "supuestos": "Las entidades cerificadas cuentan con estabilidad tecnica y operativa"
+              },
+              {
+                "id": "",
+                "resumen": "",
+                "indicador": "",
+                "verificacion": "",
+                "supuestos": ""
               }
             ]
           },
           {
             "id": "c2",
-            "resumen": "Capacitaciones c2",
-            "indicador": "Porcentaje c2",
-            "verificacion": "Base datos c2",
-            "supuestos": "La población mayor c2",
+            "resumen": "Subsidios a unidades económicas y emprendedores entregados",
+            "indicador": "Porcentaje de personas beneficiadas Porcentaje de unidades económicas beneficiadas",
+            "verificacion": "Expediente de apoyos otorgados en resguardo del departamento de Comercialización y ventas y el departamento de Investigación y desarrollo artesanal del IOA. Expediente de proyectos integrados y concluidos bajo el resguardo de la Dirección de emprendimiento y desarrollo empresarial del IODEMC. Expedientes bajo el resguardo de la Dirección de Financiamiento y la poliza de cheque bajo el resguardo de el departamento de Contabilidad del FIFEO",
+            "supuestos": "Disponibilidad de los emprendedores y las unidadaes económicas en participar en los programas.",
             "actividades": [
               {
                 "id": "c2a1",
-                "resumen": "resumen act 1",
-                "indicador": "indicador act 1",
-                "verificacion": "verificacion act 1",
-                "supuestos": "supuestos act 1"
+                "resumen": "Entregar subsidios a unidades económicas y emprendedores",
+                "indicador": " *Porcentaje de subsidios entregados a unidades económicas. *Porcentaje de subsidios a emprendedores.",
+                "verificacion": "Expediente de apoyos otorgados en resguardo del departamento de Comercialización y ventas y el departamento de Investigación y desarrollo artesanal del IOA. Expediente de proyectos integrados y concluidos bajo el resguardo de la Dirección de emprendimiento y desarrollo empresarial del IODEMC. Expedientes bajo el resguardo de la Dirección de Financiamiento y la poliza de cheque bajo el resguardo de el departamento de Contabilidad del FIFEO",
+                "supuestos": "Las unidades económicas y empredores cumplen con los requisitos de validación."
               },
               {
                 "id": "c2a2",
-                "resumen": "resumen act 2",
-                "indicador": "indicador act 2",
-                "verificacion": "verificacion act 2",
-                "supuestos": "supuestos act 2"
+                "resumen": "Difusión de las reglas de operación para acceder a los subsidios.",
+                "indicador": "Porcentaje de reuniones de difusion realizadas",
+                "verificacion": "Lista de reuniones para la difusión de información bajo resguardo de la Dirección Técnica y de Estadistica de la Secretaría de Economía. Expediente de apoyos otorgados en resguardo del departamento de Comercialización y ventas y el departamento de Investigación y desarrollo artesanal del IOA",
+                "supuestos": "Las reglas de operación se emiten en tiempo y forma. La población tiene el interes en recibir la información."
               },
               {
                 "id": "c2a3",
-                "resumen": "resumen act 3",
-                "indicador": "indicador act 3",
-                "verificacion": "verificacion act 3",
-                "supuestos": "supuestos act 3"
+                "resumen": "Elaborar un diagnóstico para identificar los subsidios adecuados a emprendedores y unidades económicas",
+                "indicador": "Porcentaje de diagnosticos realizados ",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo  Proyectos integrados de emprendimiento y competitividad a cargo del departamento Red de incubadoras y el departamento de Innovación y desarrollo Tecnológico del IODEMC. Base de datos del validación de expedientes bajo el resguardo del departamento de Capacitacíon y gestión de proyectos del FIFEO ",
+                "supuestos": "*Las unidades económicas y 128, 555,602 emprendedores tienen la disposición de compartir su información  *Las condiciones sociales y medioambientales se mantienen estables."
+              }
+            ]
+          },
+          {
+            "id": "c3",
+            "resumen": "Proyectos integrales ejecutados",
+            "indicador": "Porcentaje de proyectos integrales ejecutados",
+            "verificacion": "Padrón Único de beneficiarios de la Secretaría de Economía disponible en https://www.economia.oaxaca.gob.mx/pub Proyectos integrados y concluidos de rehabilitación integral de mercados públicos y proyectos productivos en resguardo de la Dirección de Proyectos Estrategicos del IODEMC",
+            "supuestos": "La normativa de los programas federales se mantiene vigente.",
+            "actividades": [
+              {
+                "id": "c3a1",
+                "resumen": "Vincular con organismos para la adquisición de certificaciones para los bienes producidos por las empresas integradas al proyecto",
+                "indicador": "Porcentaje de empresas de vinculadas",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las unidades económicas tinen interes en ampliar sus relaciones comerciales"
+              },
+              {
+                "id": "c3a2",
+                "resumen": "Mejorar la infraestructura productiva.",
+                "indicador": "Porcentaje de infraestructura mejorada.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo Expediente del proyecto y de los locatarios y empresarios beneficiados bajo el resguardo del departamento Abasto del IODEMC",
+                "supuestos": "Las necesidades de las unidades económicas se adaptan a las convocatorias."
+              },
+              {
+                "id": "c3a3",
+                "resumen": "Entregar de bienes para mejora del proceso de producción.",
+                "indicador": "*Porcentaje de unidades económicas beneficiadas.  *Porcentaje de bienes entregados ",
+                "verificacion": "Padrón Único de beneficiarios de la Secretaría de Economía disponible en https://www.economia.oaxaca.gob.mx/pub Expediente del proyecto y de los locatarios y empresarios beneficiados bajo el resguardo del departamento Abasto del IODEMC",
+                "supuestos": "Las unidades económicas y emprendedores tienen el interes de mejorar sus procesos de producción"
+              },
+              {
+                "id": "c3a4",
+                "resumen": "Impartir capacitaciones a unidades económicas que participan en los sectores estratégicos",
+                "indicador": "Porcentaje de capacitaciones impartidas",
+                "verificacion": "Padrón Único de beneficiarios de la Secretaría de Economía disponible en https://www.economia.oaxaca.gob.mx/pub Expediente del proyecto y de los locatarios y empresarios beneficiados bajo el resguardo del departamento Abasto del IODEMC",
+                "supuestos": "Las unidades económicas y emprendedores tienen interes en los contenidos"
+              },
+              {
+                "id": "c3a5",
+                "resumen": "Desarrollar redes empresariales",
+                "indicador": "Porcentaje de acuerdos formalizados.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las unidades económicas tienen la disposicion para asociarse con otras."
+              },
+              {
+                "id": "c3a6",
+                "resumen": "Elaborar diagnósticos de las actividades económicas estratégicas.",
+                "indicador": "Porcentaje de diagnosticos realizados ",
+                "verificacion": "Proyectos integrados y concluidos de rehabilitación integral de mercados públicos y proyectos productivos en resguardo del departamento de Fortalecimiento al sector Abasto del IODEMC",
+                "supuestos": "Las unidades económicas y emprendedores tienen la disposición de compartir su información."
+              }
+            ]
+          },
+          {
+            "id": "c4",
+            "resumen": "Trámites necesarios para la apertura, operación y cierre de unidades económicas simplificados.",
+            "indicador": "Tasa de variación los tramites necesarios para la operación.",
+            "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+            "supuestos": "Las unidades económicas adoptan la simplificación de trámites.",
+            "actividades": [
+              {
+                "id": "c4a1",
+                "resumen": "Integrar la Plataforma Única para la ejecución de trámites enfocados en la operación de unidades económicas.",
+                "indicador": "Porcentaje de avance en la integración de la plataforma.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las dependencias se coordinan de manera adecuada."
+              },
+              {
+                "id": "c4a2",
+                "resumen": "Capacitar a funcionarios públicos estatales y municipales sobre la operación de la ventanilla única en coordinación con la COFEMER.",
+                "indicador": "Porcentaje de funcionarios públicos capacitados.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Los funcionarios públicos tienen la disposición de participar en las capacitaciones "
+              },
+              {
+                "id": "c4a3",
+                "resumen": "Integrar el catálogo único de trámites en coordinación con la COFEMER.",
+                "indicador": "Porcentaje de avance en la integración del catálogo.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las instituciones públicas tienen la apertura para simplificar sus támites."
+              },
+              {
+                "id": "c4a4",
+                "resumen": "Elaborar el diagnósticos de los trámites necesarios para la operación de las unidades económicas",
+                "indicador": "Porcentaje de avence en la elaboración del diagnóstico.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las instituciones públicas tienen la disposición para compartir la información."
+              },
+              {
+                "id": "c4a5",
+                "resumen": "Formalizar acuerdos de colaboración con dependencias públicas y privadas.",
+                "indicador": "Porcentaje de acuerdos formalizados.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las intituciones tienen el interes de coordinarse"
+              }
+            ]
+          },
+          {
+            "id": "c5",
+            "resumen": "Oferta productiva y exportable promocionada",
+            "indicador": "Porcentaje de intenciones de compra formalizados.",
+            "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+            "supuestos": "Las uniadades económicas tienen la apertura de compartir su información ",
+            "actividades": [
+              {
+                "id": "c5a1",
+                "resumen": "Vincular a las unidades económicas locales con oportunidades para el establecimiento de relaciones comerciales con empresas locales, nacionales e internacionales.",
+                "indicador": "*Porcentaje de unidades económicas con intención de compra. *Porcentaje de artesanos que promocionan sus productos en la tienda física",
+                "verificacion": "*Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo *Expediente de la tienda física en resguardo del departamento de comercialización y ventas del IOA",
+                "supuestos": "El mercado nacional e internacional se interese en crear víncluos comerciales con las unidades económicas locales"
+              },
+              {
+                "id": "c5a2",
+                "resumen": "Promoción de la oferta productiva y exportable por medios electrónicos.",
+                "indicador": "Porcentaje de visitas recibidas al catálogo. Porcentaje de artesanos que promocionan sus productos por medios electrónicos",
+                "verificacion": "*Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo *Expediente de la tienda online en resguardo del departamento de comercialización y ventas del IOA",
+                "supuestos": "Las unidades económicas muestren interés en consultar y utilizar los medios electrónicos "
+              },
+              {
+                "id": "c5a3",
+                "resumen": "Participar en ferias y eventos de promoción de la oferta productiva y exportable de las MiPyMEs",
+                "indicador": "Porcentaje de unidades económicas participantes",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Existe la apertura para la realización de ferias y eventos "
+              },
+              {
+                "id": "c5a4",
+                "resumen": "Difundir las bases para la participación en eventos de promoción.",
+                "indicador": "Porcentaje de reuniones realizadas",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las unidades económicas tienen el interés de ampliar sus relaciones internacionales "
+              },
+              {
+                "id": "c5a5",
+                "resumen": "Integrar el cátalogo de la oferta productiva y exportable",
+                "indicador": "Porcentaje de avance de de la integración del catálogo.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Las unidades económicas tienen cumplen con las condiciones para ampliar sus relaciones comerciales"
+              },
+              {
+                "id": "c5a6",
+                "resumen": "Elaborar diagnósticos de la factibilidad para el intercambio comercial con diversos mercados",
+                "indicador": "Porcentaje diagnósticos elaborados.",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Se tiene la información actualizada de la demanda local, nacional e internacional."
+              }
+            ]
+          },
+          {
+            "id": "c6",
+            "resumen": "Empadronamiento artesanal realizado",
+            "indicador": "Porcentaje de artesanos incorporados al padrón",
+            "verificacion": "https://www.copeval.oaxaca.gob.mx/pub",
+            "supuestos": "Los artesanos conocen los beneficios de empadronarse.",
+            "actividades": [
+              {
+                "id": "c6a1",
+                "resumen": "Entregar credenciales a los artesanos",
+                "indicador": "Porcentaje de artesanos credencializados",
+                "verificacion": "https://www.copeval.oaxaca.gob.mx/pub",
+                "supuestos": "Los artesanos estan interesados en credencializarse"
+              },
+              {
+                "id": "c6a2",
+                "resumen": "Verificar fisicamente los talleres artesanáles",
+                "indicador": "Porcentaje de verificaciones aprobadas",
+                "verificacion": "Expediente de verificación artesanal bajo el resguardo del departamento de Investigación y desarrollo artesanal del IOA",
+                "supuestos": "Los artesanos pertiment en acceso y buenas condiciones en sus talleres"
+              }
+            ]
+          },
+          {
+            "id": "c7",
+            "resumen": "Infraestructura productiva desarrollada",
+            "indicador": "Porcentaje de obras construidas",
+            "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+            "supuestos": "Las condiciones sociales y politicas son favorables",
+            "actividades": [
+              {
+                "id": "c7a1",
+                "resumen": "Supervisar construccion de infraestructura productiva.",
+                "indicador": "Porcentaje de obras supervisadas",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Se cuenta con acceso a la zona de construcción"
+              },
+              {
+                "id": "c7a2",
+                "resumen": "Contratar obra productiva",
+                "indicador": "Porcentaje de obras adjudicadas",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Las empresas se interesan en concursar en la licitación"
+              },
+              {
+                "id": "c7a3",
+                "resumen": "Elaborar de proyectos ejecutivos",
+                "indicador": "Porcentaje de proyectos ejecutivos realizados",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Existe autorizacíon para la realizacion del proyecto"
+              },
+              {
+                "id": "c7a4",
+                "resumen": "Elaborar estudios de factibilidad",
+                "indicador": "Porcentaje de estudios de factibilidad realizados",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Las localidades permiten el acceso para la obtención de información"
+              }
+            ]
+          },
+          {
+            "id": "c8",
+            "resumen": "Reserva territorial comercializada",
+            "indicador": "Porcentaje de lotes de los polígonos de reserva territorial comercializados",
+            "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+            "supuestos": "Los inversionistas están interesados en la adquisición",
+            "actividades": [
+              {
+                "id": "c8a1",
+                "resumen": "Realizar eventos de promocion y difusion ",
+                "indicador": "Porcentaje de eventos realizados",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Los inversionistas potenciales convocados asisten"
+              },
+              {
+                "id": "c8a2",
+                "resumen": "Acompañar a inversionistas",
+                "indicador": "Porcentaje de visitas realizadas",
+                "verificacion": "Expediente técnico unitario bajo el resguardo de la Dirección de Infraestructura del FIDELO.",
+                "supuestos": "Los inverionistas solicitan conocer la reserva territorial."
+              }
+            ]
+          },
+          {
+            "id": "c9",
+            "resumen": "Creditos en condiciones preferenciales entregados",
+            "indicador": "Porcentaje de convenios formalizados",
+            "verificacion": "Convenios de colaboración en resguardo del departamento Jurídico del FIFEO",
+            "supuestos": "Las condiciones económicas y financieras se mantienen estables",
+            "actividades": [
+              {
+                "id": "c9a1",
+                "resumen": "Entregar creditos a emprendedores, empresas y personas fisicas",
+                "indicador": "Porcentaje de creditos entregados.",
+                "verificacion": "Expedientes bajo el resguardo de la Dirección de Financiamiento y la poliza de cheque bajo el resguardo de el departamento de Contabilidad del FIFEO",
+                "supuestos": "Los interesados cumplen con todos los requisitos"
+              },
+              {
+                "id": "c9a2",
+                "resumen": "Vincular productos crediticios a MiPyMES",
+                "indicador": "Porcentaje de vinculaciones realizadas",
+                "verificacion": "Base de datos de beneficiarios de los productos crediticios bajo el resguardo de la dirección de financiamiento del FIFEO",
+                "supuestos": "Las partes tinen el interes de vincularse"
+              }
+            ]
+          },
+          {
+            "id": "c10",
+            "resumen": "Oportunidades de inversión fomentadas y difundidas",
+            "indicador": "Tasa de variación de la inversión privada captada por la Secretaría de Economía",
+            "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+            "supuestos": "Las condiciones sociales se mantienen estables",
+            "actividades": [
+              {
+                "id": "c10a1",
+                "resumen": "Acompañar a los inversionistas en los procesos para la ejecución de los proyectos",
+                "indicador": "Porcentaje de inversionistas asesorados",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Los inversionistas tienen la necesidad de acompañamiento en el proceso"
+              },
+              {
+                "id": "c10a2",
+                "resumen": "Realizar eventos para la atracción de inversión privada",
+                "indicador": "Porcentaje de eventos realizados",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Los inversionistas se interesan en los eventos realizados"
+              },
+              {
+                "id": "c10a3",
+                "resumen": "Informar a los inversionistas sobre los factores productivos con los que cuenta el Estado.",
+                "indicador": "Porcentaje de inversionistas registrados en la cédula de primer contacto",
+                "verificacion": "Sistema de monitoreo de los programas disponible en https://www.economia.oaxaca.gob.mx/monitoreo",
+                "supuestos": "Los inversionistas muestran interés en los factores productivos del estado."
               }
             ]
           }
